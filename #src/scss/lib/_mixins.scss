@@ -1,0 +1,73 @@
+@mixin _mix_f-lato-4($size) {
+    font-family: $font1;
+    font-size: $size;
+    font-weight: 400;
+}
+
+@mixin _mix_f-lato-7($size) {
+    font-family: $font1;
+    font-size: $size;
+    font-weight: 700;
+}
+
+@mixin _mix_f-mont-4($size) {
+    font-family: $font2;
+    font-size: $size;
+    font-weight: 400;
+}
+
+@mixin _mix_f-mont-6($size) {
+    font-family: $font2;
+    font-size: $size;
+    font-weight: 600;
+}
+
+@mixin _mix_fx-aic-jcsb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin _mix_fx-aic-jcc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin _mix_fx-aic {
+    display: flex;
+    align-items: center;
+}
+
+@mixin _mix_fx-ais {
+    display: flex;
+    align-items: flex-start;
+}
+
+@mixin _mix_fx-aie {
+    display: flex;
+    align-items: flex-end;
+}
+
+@mixin _mix_fx-jcsb {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin _mix_op-trs {
+    opacity: 0.8;
+    transition: 0.14s;
+
+    span{
+        opacity: 0.8;
+        transition: 0.14s;
+    }
+
+    &:hover{
+        opacity: 1;
+
+        span{
+            opacity: 1;
+        }
+    }
+}
