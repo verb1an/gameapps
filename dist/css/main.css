@@ -510,6 +510,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 20px;
 }
 
 .header .header__buttons button {
@@ -1143,9 +1144,9 @@ ul.menu li.menu__item a:hover:before {
   width: 300px;
   min-width: 300px;
   margin-left: 20px;
-  height: 1000px;
   background-color: #2F2F2F;
   padding: 20px 10px;
+  max-height: 500px;
 }
 
 .catalog .section__inner .categories__filters .inp--search {
@@ -1154,6 +1155,30 @@ ul.menu li.menu__item a:hover:before {
 
 .catalog .section__inner .categories__filters .inp--search input#search {
   width: 220px;
+}
+
+.catalog .section__inner .categories .categories__genres {
+  color: #FFFFFF;
+  margin: 20px 10px;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.catalog .section__inner .categories .categories__genres .title {
+  font-family: "Montserrat", "sans-serif";
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.catalog .section__inner .categories .categories__genres a {
+  color: #FFFFFF;
+  display: block;
+  margin-bottom: 10px;
+  font-family: "Montserrat", "sans-serif";
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .catalog .section__inner .btn {
@@ -1258,6 +1283,343 @@ ul.menu li.menu__item a:hover:before {
   background-image: url("../images/genre-8.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.viewitem__block .section__inner {
+  margin: 0 100px;
+}
+
+.viewitem__block .content {
+  position: relative;
+  width: 100%;
+}
+
+.viewitem__block .content .item__info {
+  max-width: 600px;
+}
+
+.viewitem__block .content .item__info .title {
+  font-family: "Lato", "Arial", "sans-serif";
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.viewitem__block .content .item__info .img__wrapper {
+  width: 600px;
+  height: 400px;
+  margin-bottom: 40px;
+}
+
+.viewitem__block .content .item__info .img__wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.viewitem__block .content .item__info .genres {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #2d2d2d;
+}
+
+.viewitem__block .content .item__info .genres a {
+  font-family: "Lato", "Arial", "sans-serif";
+  font-size: 16px;
+  font-weight: 400;
+  -webkit-transition: 0.14s;
+  -o-transition: 0.14s;
+  transition: 0.14s;
+  margin-right: 20px;
+}
+
+.viewitem__block .content .item__info .genres a:hover {
+  color: #03C9A9;
+}
+
+.viewitem__block .content .item__info .descriprion {
+  margin-bottom: 40px;
+}
+
+.viewitem__block .content .item__info .descriprion p {
+  font-family: "Montserrat", "sans-serif";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.viewitem__block .content .item__info .teh__stats .min__stats h3, .viewitem__block .content .item__info .teh__stats .rec__stats h3 {
+  font-family: "Lato", "Arial", "sans-serif";
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.viewitem__block .content .item__info .teh__stats .min__stats .stat__item, .viewitem__block .content .item__info .teh__stats .rec__stats .stat__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.viewitem__block .content .item__info .teh__stats .min__stats .stat__item .name, .viewitem__block .content .item__info .teh__stats .rec__stats .stat__item .name {
+  font-family: "Lato", "Arial", "sans-serif";
+  font-size: 16px;
+  font-weight: 400;
+  color: #2d2d2d;
+  opacity: 0.7;
+}
+
+.viewitem__block .content .item__info .teh__stats .min__stats .stat__item .num, .viewitem__block .content .item__info .teh__stats .rec__stats .stat__item .num {
+  font-family: "Montserrat", "sans-serif";
+  font-size: 18px;
+  font-weight: 400;
+  color: #111111;
+}
+
+.viewitem__block .content .item__buy {
+  position: absolute;
+  right: 150px;
+  top: 250px;
+}
+
+.viewitem__block .content .item__buy .price__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+}
+
+.viewitem__block .content .item__buy .price__block .sale {
+  font-family: "Lato", "Arial", "sans-serif";
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFFFFF;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #03C9A9;
+}
+
+.viewitem__block .content .item__buy .price__block .old__price {
+  font-family: "Montserrat", "sans-serif";
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: line-through;
+  opacity: 0.7;
+  margin-left: 20px;
+}
+
+.viewitem__block .content .item__buy .price__block .old__price:after {
+  content: ' ₽';
+}
+
+.viewitem__block .content .item__buy .price__block .price {
+  font-family: "Montserrat", "sans-serif";
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 20px;
+}
+
+.viewitem__block .content .item__buy .price__block .price:after {
+  content: ' ₽';
+}
+
+.viewitem__block .content .item__buy .btn {
+  width: 300px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 10px 0;
+}
+
+.profile .section__inner {
+  margin: 0 100px;
+}
+
+.profile .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.profile .content .left--col {
+  margin-right: 40px;
+}
+
+.profile .content .left--col .profile__img {
+  width: 250px;
+  height: 250px;
+  background-color: #ccc;
+  margin-bottom: 20px;
+}
+
+.profile .content .left--col .profile__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.profile .content .right--col {
+  width: 100%;
+}
+
+.profile .content .right--col .profile__info {
+  height: 250px;
+  margin-bottom: 40px;
+}
+
+.profile .content .right--col .profile__info .user__name {
+  font-family: "Lato", "Arial", "sans-serif";
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.profile .content .right--col .profile__info .user__status {
+  font-family: "Montserrat", "sans-serif";
+  font-size: 20px;
+  font-weight: 400;
+  color: #2F2F2F;
+  opacity: 0.9;
+}
+
+.profile .content .right--col .game__list {
+  width: 100%;
+}
+
+.profile .content .right--col .game__list .tabs {
+  width: 100%;
+  height: 300px;
+}
+
+.profile .content .right--col .game__list .tabs .tabs__triggers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(161, 161, 161, 0.5);
+}
+
+.profile .content .right--col .game__list .tabs .tabs__triggers .trg__item {
+  position: relative;
+  display: block;
+  font-family: "Montserrat", "sans-serif";
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 15px;
+  margin-right: 20px;
+}
+
+.profile .content .right--col .game__list .tabs .tabs__triggers .trg__item:before {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 4px;
+  width: 0;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: 0.14s;
+  -o-transition: 0.14s;
+  transition: 0.14s;
+  background-color: #03C9A9;
+}
+
+.profile .content .right--col .game__list .tabs .tabs__triggers .trg__item.current:before, .profile .content .right--col .game__list .tabs .tabs__triggers .trg__item:hover:before {
+  width: 70%;
+}
+
+.profile .content .right--col .game__list .tabs .tab__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transform: translateY(100px);
+      -ms-transform: translateY(100px);
+          transform: translateY(100px);
+  height: 0;
+  overflow: hidden;
+}
+
+.profile .content .right--col .game__list .tabs .tab__list .tab__list_item {
+  display: block;
+  width: 100%;
+  padding: 5px 20px;
+  -webkit-transition: 0.14s;
+  -o-transition: 0.14s;
+  transition: 0.14s;
+}
+
+.profile .content .right--col .game__list .tabs .tab__list .tab__list_item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile .content .right--col .game__list .tabs .tab__list .tab__list_item img {
+  width: 80px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 20px;
+}
+
+.profile .content .right--col .game__list .tabs .tab__list .tab__list_item .name {
+  display: block;
+  font-family: "Montserrat", "sans-serif";
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.profile .content .right--col .game__list .tabs .tab__list .tab__list_item:hover {
+  background-color: rgba(161, 161, 161, 0.2);
+}
+
+.profile .content .right--col .game__list .tabs .tab__list.current {
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+  height: auto;
 }
 
 .footer {
@@ -1419,6 +1781,7 @@ ul.menu li.menu__item a:hover:before {
   z-index: 120;
   -webkit-box-shadow: 0px 4px 25px 1px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 25px 1px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
 }
 
 .onmodal__profile-menu:hover ~ .modal__profile-menu {

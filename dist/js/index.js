@@ -61,3 +61,35 @@
         });
     }
 })();
+
+(function () {
+    const itemBuy = document.querySelector('.viewitem__block .item__buy');
+    if(itemBuy) {
+        window.addEventListener('scroll', () => {
+            
+            if(window.pageYOffset < 1175) {
+                itemBuy.style = `top: ${window.pageYOffset + window.innerHeight - 400}px;`;
+            }
+        });
+
+    }
+})();
+
+(function () {
+    const profileTabsTriggers = document.querySelectorAll('.profile .tabs .tabs__triggers a');
+    const profileTabsItems = document.querySelectorAll('.profile .tabs .tab__list');
+
+    if(profileTabsTriggers) {
+        profileTabsTriggers.forEach((el, count) => {
+            el.addEventListener('click', () => {
+                profileTabsTriggers.forEach(trg => trg.classList.remove('current'));
+                profileTabsItems.forEach(tab => tab.classList.remove('current'));
+
+                el.classList.add('current');
+                console.log(count);
+                profileTabsItems[count].classList.add('current');
+            })
+        });
+    }
+
+})();

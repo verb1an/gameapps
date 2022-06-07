@@ -125,6 +125,7 @@ ul{
     .header__buttons{
         position: relative;
         @include _mix_fx-aic;
+        margin-right: 20px;
 
         button{
             padding: 5px;
@@ -559,15 +560,37 @@ ul.menu{
             width: 300px;
             min-width: 300px;
             margin-left: 20px;
-            height: 1000px;
             background-color: $gray-color;
             padding: 20px 10px;
+            max-height: 500px;
 
             .inp--search{
                 width: 260px;
 
                 input#search{
                     width: 220px;
+                }
+            }
+        }
+        
+        .categories{
+            .categories__genres{
+                color: $white-color;
+                margin: 20px 10px;
+                margin-bottom: 0;
+                padding-bottom: 20px;
+                border-bottom: 1px solid $white-color;
+
+                .title{
+                    @include _mix_f-mont-6(20px);
+                    margin-bottom: 15px;
+                }
+
+                a{
+                    color: $white-color;
+                    display: block;
+                    margin-bottom: 10px;
+                    @include _mix_f-mont-4(16px);
                 }
             }
         }
@@ -625,6 +648,268 @@ ul.menu{
             background-image: url('../images/genre-#{$i}.jpg');
             background-repeat: no-repeat;
             background-size: cover;
+        }
+    }
+}
+
+.viewitem__block{
+
+    .section__inner{
+        margin: 0 100px;
+    }
+
+    .content{
+        position: relative;
+        width: 100%;
+
+        .item__info{
+            max-width: 600px;
+            .title{
+                @include _mix_f-lato-7(32px);
+                margin-bottom: 40px;
+            }
+
+            .img__wrapper{
+                width: 600px;
+                height: 400px;
+                margin-bottom: 40px;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .genres{
+                @include _mix_fx-aic;
+                padding-bottom: 40px;
+                margin-bottom: 40px;
+                border-bottom: 1px solid $dark-gray-color;
+
+                a{
+                    @include _mix_f-lato-4(16px);
+                    transition: 0.14s;
+                    margin-right: 20px;
+
+                    &:hover{
+                        color: $green-color;
+                    }
+                }
+            }
+
+            .descriprion{
+                margin-bottom: 40px;
+                p{
+                    @include _mix_f-mont-4(18px);
+                }
+            }
+
+            .teh__stats{
+                .min__stats, .rec__stats{
+                    h3{
+                        @include _mix_f-lato-4(20px);
+                        margin-bottom: 30px;
+                    }
+
+                    .stat__item{
+                        @include _mix_fx-ais;
+                        flex-direction: column;
+                        margin-bottom: 20px;
+
+                        .name{
+                            @include _mix_f-lato-4(16px);
+                            color: $dark-gray-color;
+                            opacity: 0.7;
+                        }
+
+                        .num{
+                            @include _mix_f-mont-4(18px);
+                            color: $dark-color;
+                        }
+                    }
+                }
+            }
+        }
+        .item__buy{
+            position: absolute;
+            right: 150px;
+            top: 250px;
+
+            .price__block{
+                @include _mix_fx_aic;
+                margin-bottom: 40px;
+
+                .sale{
+                    @include _mix_f-lato-4(16px);
+                    color: $white-color;
+                    padding: 10px;
+                    border-radius: 4px;
+                    background-color: $green-color;
+                }
+
+                .old__price{
+                    @include _mix_f-mont-4(18px);
+                    text-decoration: line-through;
+                    opacity: 0.7;
+                    margin-left: 20px;
+
+                    &:after{
+                        content: ' ₽';
+                    }
+                }
+
+                .price{
+                    @include _mix_f-mont-4(20px);
+                    margin-left: 20px;
+
+                    &:after{
+                        content: ' ₽';
+                    }
+                }
+            }
+
+            .btn{
+                width: 300px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+
+                margin: 10px 0;
+            }
+        }
+    }
+}
+.profile{
+
+    .section__inner{
+        margin: 0 100px;
+    }
+
+    .content{
+        @include _mix_fx-ais;
+
+        .left--col{
+            margin-right: 40px;
+            .profile__img{
+                width: 250px;
+                height: 250px;
+                background-color: #ccc;
+                margin-bottom: 20px;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .right--col{
+            width: 100%;
+            .profile__info{
+                height: 250px;
+                margin-bottom: 40px;
+
+                .user__name{
+                    @include _mix_f-lato-7(24px);
+                    margin-bottom: 20px;
+                }
+                .user__status{
+                    @include _mix_f-mont-4(20px);
+                    color: $gray-color;
+                    opacity: 0.9;
+                }
+            }
+            
+            .game__list{
+                width: 100%;
+                .tabs{
+                    width: 100%;
+                    height: 300px;
+
+                    .tabs__triggers{
+                        @include _mix_fx-aic;
+                        margin-bottom: 20px;
+                        border-bottom: 1px solid rgba(161, 161, 161, .5);
+                        .trg__item{
+                            position: relative;
+                            display: block;
+                            @include _mix_f-mont-6(18px);
+                            padding-bottom: 15px;
+                            margin-right: 20px; 
+
+                            &:before{
+                                content: '';
+                                position: absolute;
+                                display: block;
+                                height: 4px;
+                                width: 0;
+                                bottom: 0;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                transition: 0.14s;
+                                background-color: $green-color;
+                            }
+
+                            &.current, &:hover{
+                                &:before{
+                                    width: 70%;
+                                }
+                            }
+                        }
+                    }
+
+                    .tab__list{
+                        @include _mix_fx-ais;
+                        flex-direction: column;
+                        transition: 0.5s;
+
+                        opacity: 0;
+                        pointer-events: none;
+                        transform: translateY(100px);
+                        height: 0;
+                        overflow: hidden;
+
+                        .tab__list_item{
+                            display: block;
+                            width: 100%;
+                            padding: 5px 20px;
+                            transition: 0.14s;
+
+                            a{
+                                @include _mix_fx-aic;
+                            }
+
+
+                            img{
+                                width: 80px;
+                                height: 50px;
+                                object-fit: cover;
+                                margin-right: 20px;
+                            }
+
+                            .name{
+                                display: block;
+                                @include _mix_f-mont-4(20px);
+                            }
+
+                            &:hover{
+                                background-color: rgba(161, 161, 161, .2);
+                            }
+                        }
+
+                        &.current{
+                            opacity: 1;
+                            pointer-events: auto;
+                            transform: translateY(0);
+                            height: auto;
+                        }
+
+                    }
+
+
+                }
+            }
         }
     }
 }
@@ -739,6 +1024,7 @@ ul.menu{
     pointer-events: none;
     z-index: 120;
     box-shadow: 0px 4px 25px 1px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
 }
 
 .onmodal__profile-menu{
